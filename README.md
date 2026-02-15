@@ -7,12 +7,6 @@ The challenge involves deploying a Three-Tier Web Application using ReactJS, Nod
 - Basic knowledge of Docker, and AWS services.
 - An AWS account with necessary permissions.
 
-## Challenge Steps
-- [Application Code](#application-code)
-- [Jenkins Pipeline Code](#jenkins-pipeline-code)
-- [Jenkins Server Terraform](#jenkins-server-terraform)
-- [Kubernetes Manifests Files](#kubernetes-manifests-files)
-- [Project Details](#project-details)
 
 ## Application Code
 The `Application-Code` directory contains the source code for the Three-Tier Web Application. Dive into this directory to explore the frontend and backend implementations.
@@ -29,22 +23,19 @@ The `Kubernetes-Manifests-Files` directory holds Kubernetes manifests for deploy
 ## Project Details
 🛠️ **Tools Explored:**
 - Terraform & AWS CLI for AWS infrastructure
-- Jenkins, Sonarqube, Terraform, Kubectl, and more for CI/CD setup
-- Helm, Prometheus, and Grafana for Monitoring
-- ArgoCD for GitOps practices
-
-🚢 **High-Level Overview:**
-- IAM User setup & Terraform magic on AWS
-- Jenkins deployment with AWS integration
+-  Kubectl
+- Helm
+  
+🚢 **Overview:**
+- IAM User setup 
 - EKS Cluster creation & Load Balancer configuration
 - Private ECR repositories for secure image management
 - Helm charts for efficient monitoring setup
-- GitOps with ArgoCD - the cherry on top!
 
-📈 **The journey covered everything from setting up tools to deploying a Three-Tier app, ensuring data persistence, and implementing CI/CD pipelines.**
+📈 **The setting up tools to deploying a Three-Tier app, ensuring data persistence, and implementing CI/CD pipelines.**
 
-## Getting Started
-To get started with this project, refer to our [comprehensive guide](https://amanpathakdevops.medium.com/advanced-end-to-end-devsecops-kubernetes-three-tier-project-using-aws-eks-argocd-prometheus-fbbfdb956d1a) that walks you through IAM user setup, infrastructure provisioning, CI/CD pipeline configuration, EKS cluster creation, and more.
+## Started
+To get started with this project, that walks through IAM user setup, infrastructure provisioning, CI/CD pipeline configuration, EKS cluster creation. 
 
 ### Step 1: IAM Configuration
 - Create a user `eks-admin` with `AdministratorAccess`.
@@ -65,8 +56,8 @@ aws configure
 
 ### Step 4: Install Docker
 ``` shell
-sudo apt-get update
-sudo apt install docker.io
+sudo yum update -y
+sudo dnf install docker -y
 docker ps
 sudo chown $USER /var/run/docker.sock
 ```
@@ -130,17 +121,3 @@ Delete the Load Balancer created in step 9 and 10.
 Go to EC2 console, access security group section and delete security groups created in previous steps
 ```
 
-## Contribution Guidelines
-- Fork the repository and create your feature branch.
-- Deploy the application, adding your creative enhancements.
-- Ensure your code adheres to the project's style and contribution guidelines.
-- Submit a Pull Request with a detailed description of your changes.
-
-## Rewards
-- Successful PR merges will be eligible for exciting prizes!
-
-## Support
-For any queries or issues, please open an issue in the repository.
-
----
-Happy Learning! 🚀👨‍💻👩‍💻
