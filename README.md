@@ -1,12 +1,7 @@
-# #TWSThreeTierAppChallenge
 
 ## Overview
-This repository hosts the `#TWSThreeTierAppChallenge` for the TWS community. 
-The challenge involves deploying a Three-Tier Web Application using ReactJS, NodeJS, and MongoDB, with deployment on AWS EKS. Participants are encouraged to deploy the application, add creative enhancements, and submit a Pull Request (PR). Merged PRs will earn exciting prizes!
+The challenge involves deploying a Three-Tier Web Application using ReactJS, NodeJS, and MongoDB, with deployment on AWS EKS. Participants are encouraged to deploy the application, add creative enhancements, and submit a Pull Request (PR).
 
-**Get The Challenge here**
-
-[![YouTube Video](https://img.youtube.com/vi/tvWQRTbMS1g/maxresdefault.jpg)](https://youtu.be/tvWQRTbMS1g?si=eki-boMemxr4PU7-)
 
 ## Prerequisites
 - Basic knowledge of Docker, and AWS services.
@@ -62,7 +57,7 @@ To get started with this project, refer to our [comprehensive guide](https://ama
 ### Step 3: Install AWS CLI v2
 ``` shell
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-sudo apt install unzip
+sudo yum install unzip -y
 unzip awscliv2.zip
 sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin --update
 aws configure
